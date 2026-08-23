@@ -32,33 +32,31 @@
             z-index: 100;
         }
 
-        .logo {
+        .brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+        }
+
+        .brand img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+        }
+
+        .brand-right {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: 18px;
-    letter-spacing: 1px;
+    align-items: flex-start;
         }
 
-        .logo img {
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
-    margin-bottom: 3px;
-        }
-
-        .logo span {
+        .brand-right span {
     color: #60a5fa;
     font-family: Calibri, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-style: italic;
     font-weight: 700;
-        }
-
-        .logo img {
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
+    margin-bottom: 8px;
         }
 
         nav a {
@@ -235,17 +233,20 @@
 
     <header>
 
-        <div class="logo">
+        <div class="brand">
             <img src="file_000000008df48211895d22be46e1cf46.png" alt="Is Affe Logo">
-            <span>IS AFFE</span>
-        </div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <div class="brand-right">
+                <span>IS AFFE</span>
+
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
 
     </header>
 
