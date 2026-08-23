@@ -7,12 +7,6 @@
     <title>Is Affe | Learn. Create. Grow.</title>
 
     <style>
-        .logo img {
-    height: 40px;
-    width: auto;
-    display: block;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -40,12 +34,27 @@
 
         .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 18px;
     letter-spacing: 1px;
-         }
+        }
+
+        .logo img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    margin-bottom: 3px;
+        }
+
+        .logo span {
+    color: #60a5fa;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+        }
+
         .logo img {
     height: 40px;
     width: 40px;
